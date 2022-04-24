@@ -7,7 +7,10 @@
 @import "./includes/footer";
 
 
-
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
 .he-ad{
     font-size: 30px;
     font-weight: 700;

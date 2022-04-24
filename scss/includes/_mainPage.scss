@@ -1,4 +1,6 @@
 main{
+    overflow-x: hidden;
+    width: 100vw;
     #main-page{
         background:linear-gradient(90deg, rgba(black,0.9), rgba(black,0.8) ),  url(../asset/img/hero.jpg);
         background-size:cover;
@@ -43,7 +45,7 @@ main{
                             margin-top: 15px;
                             display: flex;
                             @media (max-width:500px) {
-                                
+                                display: none;
                                 justify-content: space-between;
                             }
                              @media (min-width:650px) {
@@ -472,7 +474,7 @@ main{
     }
     #app-download{
         padding: 100px 0px;
-        background: linear-gradient(rgba(black,0.8), rgba(black,0.8)), url(../asset/img/hero.jpg);
+        background: linear-gradient(rgba(black,0.6), rgba(black,0.6)), url(../asset/img/hero.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

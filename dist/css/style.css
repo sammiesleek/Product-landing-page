@@ -152,6 +152,11 @@ header .wr-ap .nav .na-items a:hover {
   }
 }
 
+main {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 main #main-page {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8))), url(../asset/img/hero.jpg);
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../asset/img/hero.jpg);
@@ -196,6 +201,7 @@ main #main-page .wr-ap .row .item1 .cont .more {
 
 @media (max-width: 500px) {
   main #main-page .wr-ap .row .item1 .cont .more {
+    display: none;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -779,8 +785,8 @@ main #key-features .wr-ap .row .item2 .bx .more .item .bx p {
 
 main #app-download {
   padding: 100px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../asset/img/hero.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../asset/img/hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../asset/img/hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../asset/img/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1299,6 +1305,13 @@ footer #contact .wr-ap .row .item2 .bx .form form .in-put {
   grid-gap: 30px;
 }
 
+@media (max-width: 650px) {
+  footer #contact .wr-ap .row .item2 .bx .form form .in-put {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 footer #contact .wr-ap .row .item2 .bx .form form .in-put input {
   padding: 15px 10px;
   width: 100%;
@@ -1521,6 +1534,11 @@ footer .cpry .cpy {
 
 footer .cpry .cpy a {
   color: #e62c1f;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .he-ad {
