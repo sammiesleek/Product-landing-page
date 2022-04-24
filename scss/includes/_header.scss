@@ -1,0 +1,102 @@
+header{
+    background: $color2;
+    display: flex;
+    height: 60px;
+    width: 100vw !important;
+    position: fixed;
+    z-index: 100;
+    .wr-ap{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        .nav{
+            // background: yellow;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 0px;
+            .logo-brand{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 130px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .nav-bt{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                width:50px;
+                i{
+                    color: white;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                @media (min-width:650px) {
+                    display: none;
+                    opacity: none;
+                }
+            }
+            .na-items{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                opacity: 0;
+                top: -500px;
+                left: 0;
+                width: 100vw;
+                height: 0px;
+                background:$color2;
+                padding: 35px 0px 0px 15px ;
+                transition: height .5s ease-in-out;
+                transition: top .5s ease-in-out;
+                @media (min-width:650px) {
+                    margin-left: auto;
+                    background:transparent;
+                    height: fit-content;
+                    position:relative;
+                    opacity: 1;
+                    left: 0;
+                    top: 0;
+                    padding: 0;
+                    width: fit-content;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 20px;
+                   
+
+                }
+
+                &.open{
+                    height: 80vh;
+                    top:45px;
+                    opacity: 1;
+
+                }
+                a{
+                    color: white;
+                    margin-bottom: 10px;
+                    opacity: 0.7;
+                    transition: ease all .3s;
+                    font-weight: 500;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    @media (min-width:650px) {
+                        margin-bottom: 0;
+                        margin-right: 15px;
+                    }
+                   
+                    
+                }
+
+            }
+        }
+    }
+}
