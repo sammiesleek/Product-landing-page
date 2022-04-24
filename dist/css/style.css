@@ -4,7 +4,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 75px;
   width: 100vw !important;
   position: fixed;
   z-index: 100;
@@ -128,7 +128,7 @@ header .wr-ap .nav .na-items {
 
 header .wr-ap .nav .na-items.open {
   height: 80vh;
-  top: 45px;
+  top: 60px;
   opacity: 1;
 }
 
